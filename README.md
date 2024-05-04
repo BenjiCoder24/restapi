@@ -73,6 +73,12 @@ Let's move our chat bot server code to Glitch:
 
 - **/chat Endpoint:**
   - Send chat messages via the `/chat` endpoint using the provided HTML interface or tools like Postman.
+- **Using `curl`:**
+```bash
+curl -X POST https://substantial-juicy-bull.glitch.me/chat \
+-H "Content-Type: application/json" \
+-d '{"message": "Hello! How are you?"}'
+```
 
 ## Practice Time
 Encourage the students to:

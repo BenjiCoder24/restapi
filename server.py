@@ -1,8 +1,19 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
+from flask_cors import CORS
+
 import os
 import traceback
 
-app = Flask(__name__)
+#app = Flask(__name__)
+
+# Initialize the Flask app
+app = Flask(__name__, static_folder='public')
+CORS(app)  # Enable CORS for all routes
+
+@app.route('/')
+def serve_index():
+    # Serves the index.html file from the public folder
+    return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/ping', methods=['GET'])
 def ping():
@@ -23,4 +34,5 @@ def chat():
         return jsonify({"error": str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Defaults to 5000 if PORT not set
+    app.run(host='0.0.0.0', port=port)

@@ -38,6 +38,13 @@ Let's move our chat bot server code to Glitch:
 1. **Create a New Project:**
    - Go to [Glitch](https://glitch.com).
    - Click on "New Project" and choose a template. For this guide, use "hello-webpage" (or any basic starter project).
+   - ![image](https://github.com/BenjiCoder24/restapi/assets/157240609/35cd38fc-fb61-4c24-a6ef-d630b79c995c)
+   - ![image](https://github.com/BenjiCoder24/restapi/assets/157240609/c2ba937c-64f6-4e36-96b7-25b8f73bf30f)
+   - ![image](https://github.com/BenjiCoder24/restapi/assets/157240609/087bf3ac-86ac-418f-b2b8-bbf95c4edd9b)
+   - 
+
+
+
 
 2. **Cloning or Importing Code:**
    - **Import from GitHub:**
